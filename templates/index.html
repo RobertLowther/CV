@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row" id="about_me">
+    <div class="heading">
+        <h1>About me</h1>
+    </div>
+    <img src="{{ url_for('static', filename='mail.png') }}" width="100">
+    <p>
+        My name is Robert Lowther and I am an aspiring programmer. I have been programming in python for around 15 years. You can check my <a href="https://github.com/RobertLowther">GitHub</a> for links to a number of projects that I have completed recntly. I am intereseted network security and I am currently engaged in cyber CTF (hacking challenges to break into a vulnerable machine and retrieve a flag). I also enjoy game dev with unity and c#. This means that I have experience working with .Net framework.
+    </p>
+</div>
+
+{% endblock %}

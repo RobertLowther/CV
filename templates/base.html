@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <title>Robert's Resume</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="row">
+                <div class="col-xs-12" id="resHead">
+                    <h3>The Resume Of</h3>
+                    <h1>Robert Lowther</h1>
+                    <img class="img-responsive" src="{{url_for('static', filename='logo.png')}}" />
+                </div>
+            </div>
+            <div class="row">
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/experience">Work Experience</a></li>
+                    <li><a href="/skills">Skills</a></li>
+                    <li><a href="/education">Education</a></li>
+                    <li><a href="/qualifications">Qualifications</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+                {% block content %}
+                
+                {% endblock %}
+        </div>
+        <div class="footer">
+            <div class="row">
+                <div class="contact col-xs-12">
+                    <img class="img-responsive" src="{{url_for('static', filename='mail.png')}}" />
+                    <h1 class="title">Contact</h1>
+                    <p class="subtitle">
+                        United States <br />
+                        3002 12th Street #53<br />
+                        Harlan, IA 51537<br />
+                        <a href="tel:phone">(712)571-0693</a><br />
+                        <a target="_blank" href="https://github.com/RobertLowther">GitHub</a><br />
+                        <a href="mailto:drail159@gmail.com">Email</a><br />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
