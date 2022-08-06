@@ -76,11 +76,17 @@ li a:hover {
   padding: 10px;
 }
 
+#about_me .heading {
+  border-bottom: none;
+}
+
 #about_me p {
   text-align: center;
   margin: auto;
   width: 60%;
-  padding: 10px;
+  padding: 25px;
+  border-top: 2px solid #636366;
+  border-bottom: 2px solid #636366;
 }
 
 .contact {
@@ -101,7 +107,7 @@ li a:hover {
 .contact img {
   margin: 0 auto;
   padding:15px 15px 0px 15px;
-  width: 150px;
+  width: 75px;
 
 }
 
@@ -118,6 +124,13 @@ li a:hover {
 
 .heading h1 {
   font-size:28px;
+}
+
+.subheading {
+  font-size: 24px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  text-align: left;
 }
 
 .title {
